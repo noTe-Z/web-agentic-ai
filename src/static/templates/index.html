@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Chat</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Agentic AI Chat</h1>
+        </header>
+        
+        <main class="chat-container">
+            <div id="conversation" class="conversation">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            
+            <div class="tool-section" id="tool-section">
+                <!-- Tool calls and results will be displayed here -->
+            </div>
+            
+            <div class="message-input">
+                <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </main>
+        
+        <div class="status-bar">
+            <span id="connection-status">Connected</span>
+            <span id="conversation-id">New conversation</span>
+        </div>
+    </div>
+
+    <!-- JavaScript modules -->
+    <script src="/static/js/config.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/message-renderer.js"></script>
+    <script src="/static/js/tool-handler.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html> 
