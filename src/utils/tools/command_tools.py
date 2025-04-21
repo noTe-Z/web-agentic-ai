@@ -31,6 +31,7 @@ class RunCommandTool(BaseTool):
     MAX_EXECUTION_TIME = 30
     
     def _get_parameters(self) -> List[ToolParameter]:
+        """Define the parameters for this tool."""
         return [
             ToolParameter(
                 name="command",

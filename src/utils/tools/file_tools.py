@@ -14,6 +14,7 @@ class ReadFileTool(BaseTool):
     description = "Read the contents of a file in the conversation workspace."
     
     def _get_parameters(self) -> List[ToolParameter]:
+        """Define the parameters for this tool."""
         return [
             ToolParameter(
                 name="path",
@@ -88,6 +89,7 @@ class SaveFileTool(BaseTool):
     description = "Save a file to the conversation workspace."
     
     def _get_parameters(self) -> List[ToolParameter]:
+        """Define the parameters for this tool."""
         return [
             ToolParameter(
                 name="path",

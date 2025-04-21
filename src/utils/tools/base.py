@@ -8,11 +8,12 @@ class BaseTool(ABC):
     
     name: str
     description: str
-    parameters: List[ToolParameter]
     
     def __init__(self):
         """Initialize the tool with parameters."""
+        # Call the method to get parameters
         self.parameters = self._get_parameters()
+        print(f"Initialized tool: {self.name} with {len(self.parameters)} parameters")
     
     @abstractmethod
     def _get_parameters(self) -> List[ToolParameter]:
