@@ -30,7 +30,6 @@ class RunCommandTool(BaseTool):
     # Max command execution time in seconds
     MAX_EXECUTION_TIME = 30
     
-    @property
     def _get_parameters(self) -> List[ToolParameter]:
         return [
             ToolParameter(

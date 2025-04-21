@@ -14,7 +14,6 @@ class BaseTool(ABC):
         """Initialize the tool with parameters."""
         self.parameters = self._get_parameters()
     
-    @property
     @abstractmethod
     def _get_parameters(self) -> List[ToolParameter]:
         """

@@ -1,5 +1,2 @@
 from .tools import tool_registry
-from .tools.manager import initialize_tools
-
-# Ensure tools are initialized
-initialize_tools()
+# Tool initialization is now handled in tools/manager.py which is imported when tools is imported
