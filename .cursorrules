@@ -109,6 +109,37 @@ If needed, you can further use the `web_scraper.py` file to scrape the web page 
 
 # Scratchpad
 
+## Phase 4: Advanced Features Implementation (In Progress)
+
+Task: Implement advanced features from Section 4 of the PRD (previously out of initial scope).
+
+Steps to complete:
+[ ] 1. Advanced frontend features (complex file previews, file browser)
+[X] 2. Web tools implementation (`web_search`, `extract_content`)  
+[ ] 3. Robust error handling and UI feedback
+[ ] 4. Background tasks for auto-execution flow
+[ ] 5. Implement tool execution cancel/resume functionality
+[ ] 6. Add file preview capabilities for generated content
+
+Implementation Plan:
+1. First, review the existing codebase to understand current structure and identify integration points ✅
+2. Prioritize features based on user value and implementation complexity ✅
+3. Focus on web tools implementation first as they extend the AI's capabilities significantly ✅
+4. Add advanced frontend components for better user experience
+5. Implement robust error handling across the application
+6. Add background task handling for auto-execution flow
+7. Test the implementation thoroughly to ensure all parts work together
+
+Web Tools Implementation (Completed):
+- Created WebSearchTool that leverages the existing search_engine.py utility
+- Created ExtractContentTool that leverages the existing web_scraper.py utility
+- Updated the tools manager to register these new tools
+- Verified that both tools are properly registered and ready to use
+- Both tools save their results to files in the conversation workspace for later reference
+
+Next Focus:
+- Implement advanced frontend features for better file previews and browser
+
 ## Phase 3: Frontend Implementation (Completed)
 
 Task: Implement Phase 3 of the Agentic AI Chat project as specified in the PRD.

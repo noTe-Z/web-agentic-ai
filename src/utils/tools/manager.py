@@ -2,6 +2,7 @@ import sys
 from .registry import tool_registry
 from .file_tools import ReadFileTool, SaveFileTool
 from .command_tools import RunCommandTool
+from .web_tools import WebSearchTool, ExtractContentTool
 
 
 def initialize_tools():
@@ -15,6 +16,10 @@ def initialize_tools():
         
         # Initialize and register command tools
         tool_registry.register_tool(RunCommandTool())
+        
+        # Initialize and register web tools
+        tool_registry.register_tool(WebSearchTool())
+        tool_registry.register_tool(ExtractContentTool())
         
         print(f"Registered {len(tool_registry.get_all_tools())} tools", file=sys.stderr)
     except Exception as e:
